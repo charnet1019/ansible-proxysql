@@ -10,7 +10,7 @@ proxysql_pkg_url: "{{ proxysql_download_url }}/v{{ proxysql_version }}/{{ proxys
 
 # Type: List
 proxysql_dependency_pkgs:
-  - python3-mysql
+  - python3-PyMySQL
   - mysql
 
 # Type: List
