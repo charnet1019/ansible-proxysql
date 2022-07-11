@@ -32,7 +32,7 @@
 
 - name: Add ProxySQL APT repository (2.1.x series)
   apt_repository:
-    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.x/{{ ansible_distribution_release }}/ ./
+    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.1.x/{{ ansible_distribution_release }}/ ./
     state: present
   when: >
         (proxysql_use_official_repo) and
@@ -41,7 +41,7 @@
 
 - name: Add ProxySQL APT repository (2.2.x series)
   apt_repository:
-    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.x/{{ ansible_distribution_release }}/ ./
+    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.3.x/{{ ansible_distribution_release }}/ ./
     state: present
   when: >
         (proxysql_use_official_repo) and
@@ -50,7 +50,7 @@
 
 - name: Add ProxySQL APT repository (2.3.x series)
   apt_repository:
-    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.x/{{ ansible_distribution_release }}/ ./
+    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.3.x/{{ ansible_distribution_release }}/ ./
     state: present
   when: >
         (proxysql_use_official_repo) and
@@ -59,7 +59,7 @@
 
 - name: Add ProxySQL APT repository (2.4.x series)
   apt_repository:
-    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.x/{{ ansible_distribution_release }}/ ./
+    repo: deb http://repo.proxysql.com/ProxySQL/proxysql-2.4.x/{{ ansible_distribution_release }}/ ./
     state: present
   when: >
         (proxysql_use_official_repo) and
@@ -107,7 +107,7 @@
 
 - name: Add ProxySQL YUM repository (2.2.x series)
   yum_repository:
-    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.1.x/centos/$releasever
+    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.2.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
     gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
@@ -120,7 +120,7 @@
 
 - name: Add ProxySQL YUM repository (2.3.x series)
   yum_repository:
-    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.1.x/centos/$releasever
+    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.3.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
     gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
@@ -133,7 +133,7 @@
 
 - name: Add ProxySQL YUM repository (2.4.x series)
   yum_repository:
-    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.1.x/centos/$releasever
+    baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.4.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
     gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
