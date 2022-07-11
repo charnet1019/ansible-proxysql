@@ -97,7 +97,7 @@
     baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.1.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
-    gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
+    gpgkey: https://repo.proxysql.com/ProxySQL/proxysql-2.1.x/repo_pub_key
     name: proxysql-2.1.x
     state: present
   when: >
@@ -110,7 +110,7 @@
     baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.2.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
-    gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
+    gpgkey: https://repo.proxysql.com/ProxySQL/proxysql-2.2.x/repo_pub_key
     name: proxysql-2.2.x
     state: present
   when: >
@@ -123,7 +123,7 @@
     baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.3.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
-    gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
+    gpgkey: https://repo.proxysql.com/ProxySQL/proxysql-2.3.x/repo_pub_key
     name: proxysql-2.3.x
     state: present
   when: >
@@ -136,7 +136,7 @@
     baseurl: https://repo.proxysql.com/ProxySQL/proxysql-2.4.x/centos/$releasever
     description: ProxySQL YUM repository
     gpgcheck: True
-    gpgkey: http://repo.proxysql.com/ProxySQL/repo_pub_key
+    gpgkey: https://repo.proxysql.com/ProxySQL/proxysql-2.4.x/repo_pub_key
     name: proxysql-2.4.x
     state: present
   when: >
